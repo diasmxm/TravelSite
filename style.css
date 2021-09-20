@@ -49,14 +49,14 @@ td, th {
     --textFont: 'Roboto', sans-serif;
 }
 
-header {
+.header {
     background-color: var(--backgroundColor);
     display: flex;
     height: 70px;
     align-items: center;
 }
 
-header .logo {
+.logo {
     background-image: url("./logo.png");
     background-size: contain;
     height: 50px;
@@ -65,21 +65,21 @@ header .logo {
     margin-left: 20px;
 }
 
-header nav {
+.header nav {
     width: 300px;
     display: flex;
     justify-content: space-around;
     margin-left: 50px;
 }
 
-header a{
+.header a{
     color: var(--lightGrey);
     text-decoration: none;
     font-size: 20px;
     font-family: var(--headerFont);
 }
 
-header a:hover {
+.header a:hover {
     color: rgb(76, 76, 243);
 }
 
@@ -87,8 +87,23 @@ header a:hover {
     background-image: url("./promo.jpg");
     height: 500px;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
+.promo .h3 {
+    color: var(--lightGrey);
+    font-size: 40px;
+    font-weight: bold;
+    font-family: var(--headerFont);
+}
+.promo button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 200px;
+}
 :root {
     --backgroundColor:#002137;
     --lightGrey:#F5F5F5;
@@ -96,14 +111,14 @@ header a:hover {
     --textFont: 'Roboto', sans-serif;
 }
 
-section {
+.section {
     background-color: var(--backgroundColor);
     display: flex;
     height: 50px;
     align-items: center;
 }
 
-section h2 {
+.section h2 {
     color: var(--lightGrey);
     text-decoration: none;
     font-size: 20px;
@@ -112,42 +127,42 @@ section h2 {
     margin-right: auto;
 }
 
-content {
+.content {
     background-color: var(--lightGrey);   
 }
 
-content p {
+.content p {
     margin: 30px 50px 30px 50px;
 }
 
-footer {
+.footer {
     background-color: var(--backgroundColor);
 }
 
-footer h2 {
+.footer h2 {
     color: rgb(255, 209, 81);
     font-size: 20px;
     margin-left: 50px;
     font-family: var(--headerFont);
 }
 
-footer h4 {
+.footer h4 {
     color: rgb(255, 209, 81);
     margin-left: 50px;
     font-family: var(--headerFont);
 }
 
-footer p {
+.footer p {
     color: var(--lightGrey);
     margin-left: 50px;
     font-family: var(--headerFont);
 }
 
-footer a {
+.footer a {
     color: var(--lightGrey);
     text-decoration: none;
 }
 
-footer a:hover {
+.footer a:hover {
     color: rgb(76, 76, 243);
 }
