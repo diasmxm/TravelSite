@@ -92,17 +92,21 @@ td, th {
     align-items: center;
 }
 
-.promo .h3 {
+.promo h3 {
+    margin-left: 150px;
     color: var(--lightGrey);
     font-size: 40px;
     font-weight: bold;
     font-family: var(--headerFont);
 }
 .promo button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-right: 200px;
+    position: relative;
+    right: 360px;
+    top: 70px;
+    background-color: rgb(255, 94, 0);
+    border: none;
+    border-radius: 4px;
+    padding: 20px 34px;
 }
 :root {
     --backgroundColor:#002137;
@@ -133,6 +137,17 @@ td, th {
 
 .content p {
     margin: 30px 50px 30px 50px;
+}
+
+.section2 {
+    background-color: var(--backgroundColor);
+    display: flex;
+    height: 50px;
+    align-items: center;
+}
+
+.section2 h2 {
+    color: var(--lightGrey);
 }
 
 .footer {
