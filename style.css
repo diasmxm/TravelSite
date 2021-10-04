@@ -1,235 +1,410 @@
-html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {
-    margin: 0;
-    padding: 0
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding: 0;
 }
 
-h1, h2, h3, h4, h5, h6 {
-    font-size: 100%;
-    font-weight: normal
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal;
 }
 
 ul {
-    list-style: none
+  list-style: none;
 }
 
-button, input, select {
-    margin: 0
+button,
+input,
+select {
+  margin: 0;
 }
 
 html {
-    box-sizing: border-box
+  box-sizing: border-box;
 }
 
-*, *::before, *::after {
-    box-sizing: inherit
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
 }
 
-img, video {
-    height: auto;
-    max-width: 100%
+img,
+video {
+  height: auto;
+  max-width: 100%;
 }
 
 iframe {
-    border: 0
+  border: 0;
 }
 
 table {
-    border-collapse: collapse;
-    border-spacing: 0
+  border-collapse: collapse;
+  border-spacing: 0;
 }
 
-td, th {
-    padding: 0
+td,
+th {
+  padding: 0;
 }
-@import url('https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Roboto&display=swap");
 :root {
-    --backgroundColor:#002137;
-    --lightGrey:#F5F5F5;
-    --headerFont: 'Lato', sans-serif;
-    --textFont: 'Roboto', sans-serif;
+  --backgroundColor: #002137;
+  --lightGrey: #f5f5f5;
+  --headerFont: "Lato", sans-serif;
+  --textFont: "Roboto", sans-serif;
 }
 
 .header {
-    background-color: var(--backgroundColor);
-    display: flex;
-    height: 70px;
-    align-items: center;
+  background-color: var(--backgroundColor);
+  display: flex;
+  height: 70px;
+  align-items: center;
 }
 
 .logo {
-    background-image: url("./logo.png");
-    background-size: contain;
-    height: 50px;
-    width: 50px;
-    background-repeat: no-repeat;
-    margin-left: 20px;
+  background-image: url("./logo.png");
+  background-size: contain;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  margin-left: 20px;
 }
 
 .header nav {
-    width: 300px;
-    display: flex;
-    justify-content: space-around;
-    margin-left: 50px;
+  width: 300px;
+  display: flex;
+  justify-content: space-around;
+  margin-left: 50px;
 }
 
-.header a{
-    color: var(--lightGrey);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: var(--headerFont);
+.header a {
+  color: var(--lightGrey);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--headerFont);
 }
 
 .header a:hover {
-    color: rgb(76, 76, 243);
+  color: rgb(76, 76, 243);
+}
+
+.burger {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(255, 94, 0);
+  position: fixed;
+  border-radius: 4px 4px 4px 0;
+  top: 200px;
+  display: grid;
+  align-items: center;
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.burger h1 {
+  color: var(--lightGrey);
+  font-family: var(--headerFont);
+}
+
+.burger h1:hover {
+  color: var(--backgroundColor);
 }
 
 .promo_img {
-    background-image: url("./promo.jpg");
-    height: 500px;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-image: url("./promo.jpg");
+  height: 500px;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .promo h3 {
-    margin-left: 150px;
-    color: var(--lightGrey);
-    font-size: 40px;
-    font-weight: bold;
-    font-family: var(--headerFont);
+  margin-left: 150px;
+  color: var(--lightGrey);
+  font-size: 40px;
+  font-weight: bold;
+  font-family: var(--headerFont);
 }
 .promo button {
-    position: relative;
-    right: 360px;
-    top: 70px;
-    background-color: rgb(255, 94, 0);
-    border: none;
-    border-radius: 4px;
-    padding: 20px 34px;
+  position: relative;
+  right: 360px;
+  top: 70px;
+  background-color: rgb(255, 94, 0);
+  border: none;
+  border-radius: 4px;
+  padding: 20px 34px;
 }
 :root {
-    --backgroundColor:#002137;
-    --lightGrey:#F5F5F5;
-    --headerFont: 'Lato', sans-serif;
-    --textFont: 'Roboto', sans-serif;
+  --backgroundColor: #002137;
+  --lightGrey: #f5f5f5;
+  --headerFont: "Lato", sans-serif;
+  --textFont: "Roboto", sans-serif;
 }
 
 .section {
-    background-color: var(--backgroundColor);
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: var(--backgroundColor);
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .section h2 {
-    color: var(--lightGrey);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: var(--headerFont);
+  color: var(--lightGrey);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--headerFont);
 }
 
 .content {
-    background-color: var(--lightGrey);   
+  background-color: var(--lightGrey);
 }
 
 .content p {
-    margin: 30px 50px 30px 50px;
+  margin: 30px 50px 30px 50px;
 }
 
 .section2 {
-    background-color: var(--backgroundColor);
-    height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  background-color: var(--backgroundColor);
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .section2 h2 {
-    color: var(--lightGrey);
-    text-decoration: none;
-    font-size: 20px;
-    font-family: var(--headerFont);
+  color: var(--lightGrey);
+  text-decoration: none;
+  font-size: 20px;
+  font-family: var(--headerFont);
 }
 
 .section2 form {
-    position: relative;
-    left: 100px;
-    float: right;
+  position: relative;
+  left: 100px;
+  float: right;
 }
 
 .promo2 {
-    background-color: var(--lightGrey);
+  background-color: var(--lightGrey);
 }
 
 .promo2 h2 {
-    display: flex;
-    margin-left: 310px;
+  display: flex;
+  margin-left: 310px;
 }
 
 .advantages_wrapper {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 33%);
-    height: 300px;
-    margin: 0 auto;
-    column-gap: 0%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 500px 500px;
+  border: 2px solid black;
+}
+
+.advantages__h2 {
+  display: flex;
+  justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+  font-family: var(--headerFont);
+}
+
+.advantages__h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  font-family: var(--headerFont);
+}
+
+.line {
+  margin: 0px 100px;
+  border-top: 3px solid red;
 }
 
 .advantages__rus {
-    border: 2px solid #dddddd;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(1, 1fr);
-    justify-content: center;
+  display: grid;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.advantages__img_rus {
+  background-image: url("./rus.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
 }
 
 .advantages__eng {
-    border: 2px solid #dddddd;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
-    
+  display: grid;
+  border-right: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
+.advantages__img_eng {
+  background-image: url("./england.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
 }
 
 .advantages__afr {
-    border: 2px solid #dddddd;
-    height: 100%;
-    display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    justify-content: center;
+  display: grid;
+  border-bottom: 2px solid black;
+}
+
+.advantages__img_afr {
+  background-image: url("./Afrika.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
+}
+
+.advantages__nam {
+  display: grid;
+  border-right: 2px solid black;
+}
+
+.advantages__img_nam {
+  background-image: url("./northA.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
+}
+
+.advantages__sam {
+  display: grid;
+  border-right: 2px solid black;
+}
+
+.advantages__img_sam {
+  background-image: url("./southA.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
+}
+
+.advantages__aus {
+  display: grid;
+}
+
+.advantages__img_aus {
+  background-image: url("./australia.jpg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  margin: 0px auto;
+  height: 200px;
+  width: 230px;
+}
+
+.guarante {
+  display: flex;
+  align-items: flex-start;
+}
+
+.guarante_items {
+  margin: 30px 0;
+}
+
+.guarante_items li {
+  background: var(--backgroundColor);
+  color: var(--lightGrey);
+  font-size: 25px;
+  font-family: var(--headerFont);
+  margin: 20px 0;
+  padding: 10px 400px 10px 10px;
 }
 
 .footer {
-    background-color: var(--backgroundColor);
+  background: linear-gradient(45deg, black, black, red);
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
-.footer h2 {
-    color: rgb(255, 209, 81);
-    font-size: 20px;
-    margin-left: 50px;
-    font-family: var(--headerFont);
+.footer_contacts {
+  margin: 50px 50px 50px 50px;
 }
 
-.footer h4 {
-    color: rgb(255, 209, 81);
-    margin-left: 50px;
-    font-family: var(--headerFont);
+.footer_contacts h2 {
+  color: tomato;
+  font-size: 20px;
+  font-family: var(--headerFont);
+  padding-bottom: 10px;
 }
 
-.footer p {
-    color: var(--lightGrey);
-    margin-left: 50px;
-    font-family: var(--headerFont);
+.footer_contacts h4 {
+  color: tomato;
+  font-family: var(--headerFont);
+  padding-bottom: 10px;
 }
 
-.footer a {
-    color: var(--lightGrey);
-    text-decoration: none;
+.footer_contacts p {
+  color: var(--lightGrey);
+  font-family: var(--headerFont);
+  padding-bottom: 10px;
 }
 
-.footer a:hover {
-    color: rgb(76, 76, 243);
+.footer_contacts a {
+  color: var(--lightGrey);
+  text-decoration: none;
+}
+
+.footer_contacts a:hover {
+  color:  red;
+}
+
+.footer_right {
+  display: grid;
+  justify-items: end;
+  margin: 50px 50px 50px 0;
+}
+
+.footer_right h4 {
+  color: var(--lightGrey);
+  font-family: var(--headerFont);
+  padding-bottom: 10px;
 }
